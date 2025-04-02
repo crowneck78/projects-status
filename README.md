@@ -109,3 +109,85 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Кастомизация конфигурации
 См. [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Настройка GitHub API
+1. **Создайте персональный токен доступа GitHub**  
+   - Перейдите в [настройки разработчика GitHub](https://github.com/settings/tokens).
+   - Нажмите "Generate new token" (classic).
+   - Выберите необходимые области доступа (например, `repo` для доступа к репозиториям, `read:org` для данных организации).
+   - Скопируйте сгенерированный токен.
+
+2. **Настройте переменные окружения**  
+   Создайте файл `.env` в корневой директории проекта и добавьте следующую строку:
+   ```env
+   GITHUB_TOKEN=ваш_персональный_токен_доступа
+   ```
+   Замените `ваш_персональный_токен_доступа` на сгенерированный токен.
+
+### Использование GitHub API
+1. **Запустите приложение**  
+   Запустите приложение с помощью команды:
+   ```bash
+   npm start
+   ```
+
+2. **Взаимодействие с GitHub API**  
+   Приложение будет использовать GitHub API для получения данных. Убедитесь, что ваш токен имеет необходимые разрешения для выполнения операций.
+
+### Примечания
+- Держите файл `.env` в секрете и не добавляйте его в систему контроля версий.
+- Для получения дополнительной информации о GitHub API обратитесь к [документации GitHub API](https://docs.github.com/en/rest).
+
+---
+
+# Project Status
+
+This project uses the GitHub API to interact with GitHub repositories and retrieve data. Below are the steps to configure and use the GitHub API in this project.
+
+## Setup
+
+1. **Clone the Repository**  
+   Clone this repository to your local machine:
+   ```bash
+   git clone <repository-url>
+   cd projectsstatus
+   ```
+
+2. **Install Dependencies**  
+   Ensure you have all required dependencies installed. Run:
+   ```bash
+   npm install
+   ```
+
+3. **Create a GitHub Personal Access Token**  
+   - Go to [GitHub Developer Settings](https://github.com/settings/tokens).
+   - Click on "Generate new token" (classic).
+   - Select the required scopes (e.g., `repo` for repository access, `read:org` for organization data).
+   - Copy the generated token.
+
+4. **Set Up Environment Variables**  
+   Create a `.env` file in the root of the project and add the following:
+   ```env
+   GITHUB_TOKEN=your_personal_access_token
+   ```
+   Replace `your_personal_access_token` with the token you generated.
+
+## Usage
+
+1. **Run the Application**  
+   Start the application using:
+   ```bash
+   npm start
+   ```
+
+2. **Interact with the GitHub API**  
+   The application will use the GitHub API to fetch data. Ensure your token has the necessary permissions for the operations you want to perform.
+
+## Notes
+
+- Keep your `.env` file private and do not commit it to version control.
+- For more information about the GitHub API, refer to the [GitHub API Documentation](https://docs.github.com/en/rest).
+
+## License
+
+This project is licensed under the MIT License.
