@@ -1,0 +1,73 @@
+# Node.js зависимости
+node_modules/
+npm-debug.log*
+yarn-error.log
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Файлы окружения
+*.env
+*.env.local
+*.env.development
+*.env.production
+*.env.test
+
+# Логи и временные файлы
+logs/
+*.log
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Сборочные артефакты
+dist/
+build/
+.out/
+.next/
+.vite/
+
+# Файлы кеша и IDE
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.bak
+.idea/
+*.iml
+.vscode/
+
+# Файлы тестирования и покрытия кода
+coverage/
+jest/
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+
+# Файлы, специфичные для фронтенда (если есть)
+**/public/*.cache
+**/public/static
+**/public/build
+**/.parcel-cache
+
+# Исключение конфиденциальных данных
+secrets/
+keys/
+certs/
+
+# Исключение конфигурационных файлов с паролями
+*.config
+*.config.json
+*.config.yaml
+*.config.yml
+*.secret
+*.key
